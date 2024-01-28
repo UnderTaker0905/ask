@@ -1,7 +1,8 @@
 :root {
   --color-yellow: #ffc32b;
   --color-green: #4eaf4e;
-  --color-dark: #151515;
+  --color-black: rgba(27, 27, 27, 0.91);
+  --color-dark: #262626;
   --color-gray: #ebebeb;
   --color-white: #fff;
 }
@@ -33,7 +34,7 @@ ul {
 }
 
 .header {
-  background: rgba(27, 27, 27, 0.91);
+  background-color: var(--color-dark);
   padding: 40px;
 }
 .header__row {
@@ -72,7 +73,7 @@ ul {
   align-items: center;
   padding: 8px 41px 8px 10px;
   column-gap: 11px;
-  color: var(--color-dark);
+  color: var(--color-black);
 }
 
 .hero {
@@ -120,6 +121,12 @@ ul {
   width: 20%;
 }
 
+.advantages {
+  position: relative;
+  top: -70;
+  left: 0;
+}
+
 .advantages__row {
   display: flex;
   gap: 10px;
@@ -131,6 +138,10 @@ ul {
   padding: 48px;
   padding-top: 237px;
   width: 338px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
 }
 
 .advantages__heading {
@@ -142,7 +153,75 @@ ul {
   margin-bottom: 15px;
 }
 
-.advantages-link {
+.advantages__link {
   padding: 16px 31px;
   border-radius: 55px;
+  display: inline-block;
+  color: var(--color-black);
+  font-weight: bold;
+}
+
+.advantages__card-services {
+  background-image: url(img/Photo2222.png);
+}
+
+.advantages__card-approach {
+  background-image: url(img/Photo111.png);
+}
+
+.advantages__card-solution {
+  background-color: var(--color-dark);
+}
+
+.advantages__link_white {
+  background-color: var(--color-white);
+}
+
+.advantages__link_black {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.advantages-card__icons {
+  /* transform: rotate(-15deg); */
+  border: 1px solid red;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.advantages-card__icon-1 {
+  transform: rotate(30deg) translate(-60px, -20px);
+}
+
+.advantages-card__icon-2 {
+  transform: rotate(0deg) translate(-140px, -10px) scale(0.5);
+}
+
+.advantages-card__icon-3 {
+  transform: rotate(50deg) translate(140px, -10px);
+}
+
+.advantages-card__icon-4 {
+  transform: rotate(10deg) translate(-60px, -10px);
+}
+
+.advantages-card__icon-5 {
+  transform: rotate(40deg) translate(60px, 20px);
+}
+
+.advantages-card__icon-6 {
+  transform: rotate(10deg) translate(-160px, 120px);
+}
+
+.advantages-card__icon-0 {
+  transform: rotate(0deg) translate(20px, 70px);
+}
+
+.advantages__heading {
+  font-size: 150px;
+  position: absolute;
+  -webkit-text-stroke: 2px var(--color-black);
+  font-weight: normal;
+  color: transparent;
 }
